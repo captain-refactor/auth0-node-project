@@ -1,6 +1,6 @@
 import {AuthenticationClient} from "auth0";
 import * as Router from "koa-router";
-import * as bodyParser from "body-parser";
+import * as bodyParser from "koa-bodyparser";
 
 export class AuthController {
     constructor(private client: AuthenticationClient) {
@@ -13,10 +13,14 @@ export class AuthController {
     router(): Router {
         return new Router()
             .use(bodyParser() as any)
-            .post('/login', context => {
+            .get('/login',context => {
+                context.response.body = 'login';
+            })
+            .post('/login', async context => {
                 const {username, password} = context.request.body;
-                console.log(username);
-                console.log(password);
+                let result = await this.login(username, password);
+                console.log(result);
+                context.response.body = result;
             })
     }
 }

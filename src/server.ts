@@ -7,10 +7,10 @@ export class Server {
 
     constructor(private auth: AuthController) {
         let router = new Router();
+        router.use(this.auth.router().middleware());
         router.get('/', context => {
             context.response.body = 'Hello';
         });
-        router.use(this.auth.router().middleware());
         this.app.use(router.middleware());
     }
 
