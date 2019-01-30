@@ -8,12 +8,17 @@ POST http://localhost:8080/login
 Content-Type: application/json
 
 {
-  "username": "jan",
-  "password": "abcd"
+  "username": "jan+node@expan.do",
+  "password": "U.`vV{8Yjxar|;/"
 }
 
 ###
 
 GET http://localhost:8080/login
 
+###
+
+GET http://localhost:8080/login
+Set-Cookie: theme=hello; path=/; httponly
+#Set-Cookie: token=eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik5qRXdNVVF3T1RGRk9VUTBOMFkxUmtKQ01qRTVORFpEUlVRMVFUTTFRa1U1TlVJMU9VUkZOUSJ9.eyJuaWNrbmFtZSI6Imphbitub2RlIiwibmFtZSI6Imphbitub2RlQGV4cGFuLmRvIiwicGljdHVyZSI6Imh0dHBzOi8vcy5ncmF2YXRhci5jb20vYXZhdGFyLzg0YTJjOWJhYjljNjk5NDA5ZTU0YTAzMmMyZDE4NjY2P3M9NDgwJnI9cGcmZD1odHRwcyUzQSUyRiUyRmNkbi5hdXRoMC5jb20lMkZhdmF0YXJzJTJGamEucG5nIiwidXBkYXRlZF9hdCI6IjIwMTktMDEtMzBUMjA6NTM6NTAuMjU0WiIsImVtYWlsIjoiamFuK25vZGVAZXhwYW4uZG8iLCJlbWFpbF92ZXJpZmllZCI6ZmFsc2UsImlzcyI6Imh0dHBzOi8va3JlbWVuaC5ldS5hdXRoMC5jb20vIiwic3ViIjoiYXV0aDB8NWM1MWRiODhkMzhmNWM3OTc2ZGU0ZTg3IiwiYXVkIjoiT3g0NmJWU2tMWG1CYjFjeGhDUUtXOGplR00zQWFUVWYiLCJpYXQiOjE1NDg4ODE2MzIsImV4cCI6MTU0ODkxNzYzMn0.kEErpv_KtcuyFP92oN9rZIqUjsPEnZxKx66dKmj_-VjnXGOogE0UAbPUaoK2PMeZLbT5T_fwHw7TzK04ubE6D6GhMOKR8xc9QC6kX4VygylqYVYmlBtAfhsbhFJk2eRWlDXccRzkq7iUtgI-Ki0yZTm6YEBtCgPL9ohKMqKrkcsEOtb41rO-h9w_6-e1XreeOt8URoe1OpZQMwMS-AnioIFbNkok7QaQebP2UEyxEIw5MxcniWmm4QkTBE4Fz-_RP46t2e-oppzhO6d9EdoMdUcL7xaDxyLahXVMURUPv-GPJOzU_ejDEgegpm1es5Nik5QwWYKIz6eFu9VhxTcBtg; path=/; secure=false
 ###
